@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class QuickUnionUF{
+public class WeightedUF{
     private static int[] id;
     private static int[] size;
     public static void initialize(int N){

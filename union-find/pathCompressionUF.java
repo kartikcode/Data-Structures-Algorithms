@@ -8,7 +8,7 @@
 
 import java.util.Scanner;
 
-public class QuickUnionUF{
+public class pathCompressionUF{
     private static int[] id;
     private static int[] size;
     public static void initialize(int N){
