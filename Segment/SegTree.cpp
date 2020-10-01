@@ -11,7 +11,7 @@ struct segtree
 		sum.assign(2*size,0LL);
 	}
 	//Uncomment the following part of code if you want to directly build it from a vector.
-    //This is also a bit faster because set function requires n calls while this in builds in 1 call.
+    	//This is also a bit faster because set function requires n calls while this builds in 1 call.
 	/*void build(vector<int> &a, int x, int lx, int rx)
 	{
 		if(rx-lx==1)
