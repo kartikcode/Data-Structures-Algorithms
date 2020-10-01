@@ -11,3 +11,4 @@ All the assignments and coursework done as a part of Coursera DSA course by Prin
 ### List of implemented Algorithms
 - Various Sorting Algos
 - Knapsack Problem
+- Binary Search
