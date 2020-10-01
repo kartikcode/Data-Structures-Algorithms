@@ -12,3 +12,4 @@ All the assignments and coursework done as a part of Coursera DSA course by Prin
 - Various Sorting Algos
 - Knapsack Problem
 - Binary Search
+- Kadane 
