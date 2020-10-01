@@ -1,0 +1,8 @@
+Knapsack are basically classified between three sub categories:
+1) Fractional Knapsack
+2) 0-1 Knapsack
+3) Unbounded Knapsack
+
+Fractional Knapsack is classified in Greedy algorithms.
+0-1 Knapsack has an approach using dynamic programming.
+Unbounded Knapsack can hace multiple instances of the same bag.
