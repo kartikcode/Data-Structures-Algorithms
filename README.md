@@ -7,6 +7,7 @@ All the assignments and coursework done as a part of Coursera DSA course by Prin
 - Queues
 - Union-Find (Set implementation)
 - Binary Search Tree (BST)
+- Segment Tree 
 
 ### List of implemented Algorithms
 - Various Sorting Algos
