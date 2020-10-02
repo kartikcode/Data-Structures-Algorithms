@@ -1,0 +1,112 @@
+// Github - kartikcode
+// Codeforces - kartikea_gupta
+#include <iostream>
+#include <bits/stdc++.h>
+#include <string>
+#include <stdlib.h>
+#include <cmath>
+#include <cstdio>
+#include <algorithm>
+#include <fstream>
+#include <typeinfo>
+#include <sstream>
+#define ll long long
+#define ld long double
+#define vll vector<ll>
+#define pll pair<ll, ll>
+#define vpll vector<pll>
+#define I insert
+#define pb push_back
+#define F first
+#define S second
+#define br "\n"
+#define repi(i, a, b) for (ll i = a; i < b; i++)
+#define repj(j, a, b) for (ll j = a; j < b; j++)
+#define vi vector<int>
+#define pii pair<int, int>
+#define vpii vector<pii>
+#define mod 1000000007
+#define lim 100001
+#define pi 3.14159265
+
+using namespace std;
+
+bool isPrime(ll n)
+{
+    if (n <= 1)
+        return false;
+    if (n <= 3)
+        return true;
+    if (n % 2 == 0 || n % 3 == 0)
+        return false;
+    for (int i = 5; i * i <= n; i = i + 6)
+        if (n % i == 0 || n % (i + 2) == 0)
+            return false;
+    return true;
+}
+ll factorial(ll n)      {    return (n == 1 || n == 0) ? 1 : n * factorial(n - 1); }
+ll gcd(ll a, ll b)      {    if (a == 0)  return b; else return gcd(b % a, a);}
+ll power(ll a, ll n)    {    if (n == 1) return a;else if (n == 0) return 1; else{ ll r = power(a, n / 2);if (n % 2 == 0)    return r * r;    else    return r * a * r;}}
+ll nCr(ll n, ll r)      {    return ((factorial(n)) / (factorial(n - r) * factorial(r))); }
+double precise(double n){    return floor(pow(10, 250) * n) / pow(10, 250);}
+
+ll calculate(ll w,ll n, ll weights[], ll value[], vector<vll>& rec){
+    if((w==0) or (n==-1)){
+        return 0;
+    }
+    if(rec[w][n]!=-1){
+        return (rec[w][n]);
+    }
+    ll weight = weights[n];
+    if(weight>w){
+        return  rec[w][n] = calculate(w, n - 1, weights,value,rec);
+    }
+    else{
+    return rec[w][n] = max(calculate(w, n - 1, weights, value, rec), value[n] + calculate(w - weight, n-1, weights, value, rec));
+    }
+}
+
+struct Listnode{
+    int data;
+    Listnode *next;
+};
+
+Listnode* addItem (int data, Listnode *head){
+    Listnode *new_head = (Listnode *)malloc(sizeof(struct Listnode));
+    new_head->data = data;
+    if(head==NULL){
+        new_head->next = NULL;
+        return new_head;
+    }
+    new_head->next = head;
+    return new_head;
+}
+
+Listnode* popItem (int data, Listnode *head){
+    if(isEmpty){
+        cout<<"Error 404: Stack not found!"<<endl;
+        return head;
+    }
+    cout<<(head->data)<<endl;
+    return head->next;
+}
+
+bool isEmpty (Listnode *head){
+    if(head==NULL) return true;
+    return false;
+}
+
+
+
+int main()
+{    
+/*#ifndef ONLINE_JUDGE
+    // for getting input from input.
+    freopen("running_on_fumes_chapter_1_validation_input.txt", "r", stdin);
+    // for writing output to output.txt
+    freopen("output.txt", "w", stdout);
+#endif*/
+	//cerr << "Time : " << 1000 * ((double)clock()) / (double)CLOCKS_PER_SEC << "ms\n";
+
+	return 0;
+}
