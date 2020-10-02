@@ -14,3 +14,5 @@ All the assignments and coursework done as a part of Coursera DSA course by Prin
 - Knapsack Problem
 - Binary Search
 - Kadane 
+- Dijkstra
+- Kruskal's
