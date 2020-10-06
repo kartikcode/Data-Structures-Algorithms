@@ -11,8 +11,9 @@ All the assignments and coursework done as a part of Coursera DSA course by Prin
 
 ### List of implemented Algorithms
 - Various Sorting Algos
-- Knapsack Problem
+- Knapsack Problem (Both Variants 1 and 2)
 - Binary Search
-- Kadane 
-- Dijkstra
-- Kruskal's
+- Dijkstra ALgorithm for finding the shortest path
+- Kruskal's Algorithm for finding the shortest path
+- Kadane's Algorithm for Maximum Sum of Contiguous Subarray
+- Circular Kadane's Algorithm for Maximum Sum of Contiguous Subarray with both ends connected
